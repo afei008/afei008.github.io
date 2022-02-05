@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d2245e9"],{e09a:function(e,n,o){"use strict";o.r(n);var c=o("8bbf");function t(e,n,o,t,r,a){return Object(c["openBlock"])(),Object(c["createElementBlock"])("div",null,"base-form")}var r=Object(c["defineComponent"])({name:"BaseForm"}),a=o("6b0d"),b=o.n(a);const d=b()(r,[["render",t]]);n["default"]=d}}]);
