@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --color: #333;
+    background: var(--color);
+    height: 100vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body,
+.list,
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.list {
+    list-style: none;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.item {
+    width: 20%;
+}
+
+.item .link {
+    flex-flow: column;
+    color: var(--color);
+    text-align: center;
+}
+
+.item .icon,
+.item .text {
+    transition: 0.5s;
+}
+
+.item .icon {
+    position: relative;
+    z-index: 1;
+    line-height: 1;
+    transform: translateY(10px);
+}
+
+.item .text {
+    transform: translateY(30px);
+}
+
+.item .iconfont {
+    font-size: 26px;
+}
+
+.item:hover .icon {
+    color: #fff;
+    transform: translateY(-29px);
+}
+
+.item:hover .text {
+    transform: translateY(0);
+}
+
+.item:hover ~ .circle {
+    opacity: 1;
+}
+
+.item:nth-child(1):hover ~ .circle {
+    transform: translateX(calc(-50% + -144px));
+}
+
+.item:nth-child(2):hover ~ .circle {
+    transform: translateX(calc(-50% + -72px));
+}
+
+.item:nth-child(3):hover ~ .circle {
+    transform: translateX(calc(-50% + 0));
+}
+
+.item:nth-child(4):hover ~ .circle {
+    transform: translateX(calc(-50% + 72px));
+}
+
+.item:nth-child(5):hover ~ .circle {
+    transform: translateX(calc(-50% + 144px));
+}
+
+.circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: skyblue;
+    opacity: 0;
+    top: -30px;
+    left: 50%;
+    transition: 0.5s;
+    transform: translateX(-50%);
+    box-shadow: 0 0 0 8px var(--color);
+}
+
+.circle::before,
+.circle::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+}
+
+.circle::before {
+    left: -22px;
+    box-shadow: 0 -10px 0 0px var(--color);
+    border-top-right-radius: 100%;
+}
+
+.circle::after {
+    right: -22px;
+    box-shadow: 0 -10px 0 0px var(--color);
+    border-top-left-radius: 100%;
+}

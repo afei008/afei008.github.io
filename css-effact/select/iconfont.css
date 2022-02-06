@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1638414447965') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Edge:before {
+  content: "\e87f";
+}
+
+.icon-Chrome:before {
+  content: "\e880";
+}
+
+.icon-Firefox:before {
+  content: "\e881";
+}
+
+.icon-Opera:before {
+  content: "\e883";
+}
+
+.icon-Safari:before {
+  content: "\e884";
+}
+

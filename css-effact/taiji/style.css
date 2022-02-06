@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+    height: 100vh;
+}
+
+.taiji {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(#000 50%, #fff 50%);
+    border-radius: 50%;
+    animation: r 2s linear infinite;
+}
+
+.taiji::before,
+.taiji::after {
+    content: '';
+    --i: 0;
+    box-sizing: border-box;
+    flex: 1;
+    height: 50%;
+    border-radius: 50%;
+    border: 30px solid hsl(0, 0%, calc((1 - var(--i)) * 100%));
+    background: hsl(0, 0%, calc(var(--i) * 100%));
+    transform-origin: calc(var(--i) * 100%) 50%;
+    transform: scale(0.5);
+    animation: s 1s ease-in-out calc(var(--i) * -1s) infinite alternate;
+}
+
+.taiji::after {
+    --i: 1;
+}
+
+@keyframes s {
+    to {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes r {
+    to {
+        transform: rotate(360deg);
+    }
+}

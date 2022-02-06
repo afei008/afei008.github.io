@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+
+.link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --hl: 0;
+}
+
+.link .icon {
+    position: absolute;
+}
+
+.link .icon .iconfont {
+    font-size: 40px;
+}
+
+.link .icon[id*='blur'] {
+    --r: 5px;
+    position: fixed;
+    bottom: 100vh;
+}
+
+.link .one {
+    z-index: 1;
+    opacity: var(--hl);
+    filter: sepia(1) hue-rotate(calc(var(--hue) - 50deg)) saturate(3)
+        blur(var(--r, 0));
+    transform: translate(calc(var(--hl) * 0.875em), calc(var(--hl) * -0.25em))
+        rotate(calc(var(--hl) * 22.5deg));
+    transition: 0.3s;
+}
+
+.link .two {
+    z-index: 2;
+    color: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-mask: linear-gradient(red 0 0) text;
+    mask: linear-gradient(red 0 0) text;
+}
+
+@supports (background: -moz-element(#b)) {
+    .link .two {
+        background-image: -moz-element(var(--blur-id));
+        background-color: #fff;
+        background-clip: text;
+    }
+}
+
+.link .three {
+    z-index: 3;
+    -webkit-filter: grayscale(1) opacity(0.35);
+    filter: grayscale(1) opacity(0.35);
+}
+
+.link:hover {
+    --hl: 1;
+}

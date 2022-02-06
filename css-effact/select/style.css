@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #333;
+    border-top: 0;
+    border-right: 0;
+    border-bottom-left-radius: 4px;
+    top: 20px;
+    right: 15px;
+    transform: rotate(-45deg);
+    transition: transform 0.3s;
+}
+
+.container.active::after {
+    top: 23px;
+    transform: rotate(135deg);
+}
+
+.container.active .options {
+    visibility: visible;
+    opacity: 1;
+}
+
+.container .text-box,
+.container .options {
+    box-shadow: 0 0 10px rgba(165, 165, 165, 0.2);
+    border-radius: 5px;
+    background: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container .text-box {
+    position: relative;
+    border: none;
+    padding: 16px 20px;
+}
+
+.container .text-box:focus-visible {
+    outline: 0;
+}
+
+.container .options {
+    position: relative;
+    margin-top: 15px;
+    background: #fff;
+    color: #555;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.container .options::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-image: linear-gradient(
+        to right bottom,
+        #fff 50%,
+        transparent 50%
+    );
+    transform: translateX(-50%) rotate(45deg);
+    left: 50%;
+    top: -5px;
+}
+
+.container .item {
+    padding: 10px 20px;
+    transition: color 0.3s, background 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.container .item:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.container .item:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.container .item:hover,
+.container .item.active {
+    color: #fff;
+    background: deepskyblue;
+}
+
+.container .iconfont {
+    margin-right: 5px;
+}

@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body,
+body {
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+}
+
+i {
+    position: absolute;
+    width: 5px;
+    height: 200px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: rain 3s linear infinite;
+}
+
+i:nth-child(3n + 1) {
+    background: linear-gradient(transparent, deepskyblue);
+}
+
+i:nth-child(3n + 2) {
+    background: linear-gradient(transparent, coral);
+}
+
+i:nth-child(3n + 3) {
+    background: linear-gradient(transparent, deeppink);
+}
+
+@-webkit-keyframes rain {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(calc(100vh + 200px));
+    }
+}
+
+@keyframes rain {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(calc(100vh + 200px));
+    }
+}

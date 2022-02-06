@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    height: 100vh;
+}
+
+.list {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.list .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    height: 100%;
+    background: #fff;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.list .name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.list .img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(red, yellow);
+}
+
+.list .menu {
+    position: relative;
+    left: 0;
+    width: 30px;
+    height: 70px;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list .menu .link {
+    position: absolute;
+    border-radius: 50%;
+    background: #333;
+    width: 10px;
+    height: 10px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid transparent;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.list .menu .link:nth-child(1) {
+    transform: translateY(-20px);
+}
+
+.list .menu .link:nth-child(2) {
+    transform: translateY(20px);
+}
+
+.list .menu .iconfont {
+    color: transparent;
+}
+
+.list #menu:checked + .menu {
+    width: 200px;
+}
+
+.list #menu:checked + .menu .link {
+    width: 50px;
+    height: 50px;
+    pointer-events: unset;
+}
+
+.list #menu:checked + .menu .link:hover {
+    border-color: #ff00b4;
+}
+
+.list #menu:checked + .menu .link:nth-child(1) {
+    transform: translateY(0) translateX(-60px);
+}
+
+.list #menu:checked + .menu .link:nth-child(2) {
+    transform: translateY(0) translateX(60px);
+}
+
+.list #menu:checked + .menu .iconfont {
+    font-size: 30px;
+    color: #fff;
+}

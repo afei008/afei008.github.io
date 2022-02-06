@@ -1,0 +1,132 @@
+.heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    background: red;
+    width: 50px;
+    height: 80px;
+    left: 50px;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+.heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.infinity {
+    position: relative;
+    width: 212px;
+    height: 100px;
+}
+.infinity::before,
+.infinity::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 20px solid red;
+    border-radius: 50px 50px 0 50px;
+    transform: rotate(-45deg);
+}
+.infinity::after {
+    left: auto;
+    right: 0;
+    border-radius: 50px 50px 50px 0;
+    transform: rotate(45deg);
+}
+
+.egg {
+    width: 125px;
+    height: 180px;
+    background: red;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.pacman {
+    width: 0;
+    height: 0;
+    border: 60px solid red;
+    border-right-color: transparent;
+    border-radius: 60px;
+}
+
+.rss {
+    width: 20em;
+    height: 20em;
+    border-radius: 3em;
+    background: red;
+}
+.rss::before {
+    content: '';
+    display: block;
+    width: 5em;
+    height: 5em;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    top: 11.5em;
+    left: 3.5em;
+}
+.rss::after {
+    content: '';
+    display: block;
+    background: red;
+    width: 13em;
+    height: 13em;
+    position: relative;
+    top: -2em;
+    left: 3.8em;
+    border-radius: 2.5em;
+    box-shadow: -2em 2em 0 0 #fff inset, -4em 4em 0 0 red inset, -6em 6em 0 0 #fff inset;
+}
+
+.taiji{
+    position: relative;
+    width: 96px;
+    height: 48px;
+    background: gray;
+    border-color: red;
+    border-style: solid;
+    border-width: 2px 2px 50px 2px ;
+    border-radius: 100%;
+}
+.taiji::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: gray;
+    border: 18px solid red;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+}
+.taiji::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: red;
+    border: 18px solid gray;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+}
+
+.moon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 red;
+}
