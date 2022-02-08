@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            *::before,
+            *::after {
+                content: '';
+                display: block;
+            }
+            body {
+                margin: 0;
+                background: #0b2429;
+            }
+            body::after {
+                width: 100%;
+                height: 100%;
+                background: radial-gradient(
+                    circle,
+                    #0b2429 25px,
+                    0,
+                    #f3ac3c 70px,
+                    0,
+                    #0b2429 90px,
+                    0,
+                    #998235 100px,
+                    0,
+                    transparent
+                );
+                position: absolute;
+                z-index: 1;
+            }
+            div::before,
+            div::after {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background: #998235;
+                top: 100px;
+                left: 80px;
+                transform: rotate(45deg);
+            }
+            div::after {
+                left: 220px;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

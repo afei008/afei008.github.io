@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            body {
+                background: #f7f3da;
+            }
+            div,
+            *::before,
+            *::after {
+                content: '';
+                position: absolute;
+            }
+            div {
+                width: 200px;
+                height: 80px;
+                left: 0;
+                top: 110px;
+                border-radius: 0 10px 0 0;
+                background: #d25b70;
+                transform-origin: 200px 40px;
+                transform: scale(calc(var(--i) * -1));
+            }
+            div::before {
+                width: 200px;
+                height: 150px;
+                top: 40px;
+                border-radius: 0 20px 0 0;
+                background: #f7f3da;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="--i: -1"></div>
+        <div style="--i: 1"></div>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            body {
+                background: #5c434c;
+                display: flex;
+                flex-flow: wrap;
+                justify-content: space-between;
+                align-content: space-between;
+                writing-mode: vertical-lr;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            div {
+                width: 80px;
+                height: 80px;
+                background: #f09462;
+                border-radius: 100% 0 0 0;
+            }
+            div:nth-child(2n) {
+                background: #f5d6b4;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 此处如果用多背景处理，则定位过程会比较繁琐 -->
+        <!-- 该效果在浏览器上会有少许偏移，因为 body 的 margin 问题，因此使用 padding 处理 -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </body>
+</html>

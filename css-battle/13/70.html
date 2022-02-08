@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            div,
+            *::before,
+            *::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                margin: auto;
+            }
+            body {
+                background: #293462;
+            }
+            body::before {
+                width: 150px;
+                height: 100px;
+                background: #fe5f55;
+                top: 20px;
+                border-radius: 50px;
+                box-shadow: inset 0 -60px 0 -30px #a64942;
+            }
+            div {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                color: #293462;
+                box-shadow: -10px 15px, 10px 15px, -35px -40px, 35px -40px,
+                    -35px -40px 0 10px #fff1c1, 35px -40px 0 10px #fff1c1,
+                    -35px -40px 0 20px #fe5f55, 35px -40px 0 20px #fe5f55;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 嘴巴那里还差一点，待解决 -->
+        <div></div>
+    </body>
+</html>

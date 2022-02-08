@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            div,
+            i,
+            *::before,
+            *::after {
+                content: '';
+                position: absolute;
+            }
+            body {
+                background: #191919;
+            }
+            body::before,
+            body::after {
+                width: 115px;
+                height: 114px;
+                border-radius: 0 50% 50% 50%;
+                background: #e08027;
+                top: 77px;
+                left: 89px;
+            }
+            body::after {
+                transform: scale(-1, 1);
+                width: 114px;
+                top: 67px;
+                left: 187px;
+                border: 10px solid #191919;
+            }
+            div {
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                background: #191919;
+                top: 89px;
+                left: 101px;
+                z-index: 1;
+                -webkit-box-reflect: right 18px;
+            }
+            div::before {
+                width: 12px;
+                height: 12px;
+                border: 9px solid;
+                border-radius: 50%;
+                border-color: #e08027 #e08027 #191919 #191919;
+                left: 30px;
+                top: 36px;
+                transform: rotate(-45deg);
+            }
+            i {
+                background: #e08027;
+                width: 55px;
+                height: 50px;
+                top: 160px;
+                left: 170px;
+                transform: rotate(45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <i></i>
+    </body>
+</html>

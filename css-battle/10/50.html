@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            div,
+            i,
+            *::before,
+            *::after {
+                content: '';
+                position: absolute;
+            }
+            body {
+                background: #1a4341;
+            }
+            body::before,
+            body::after {
+                inset: 0;
+                margin: auto;
+            }
+            body::before {
+                width: 100px;
+                height: 140px;
+                margin: 110px auto;
+                background: #998235;
+                border-radius: 20px;
+            }
+            body::after {
+                width: 100px;
+                height: 55px;
+                background: #f3ac3c;
+                border-radius: 20px 20px 0 0;
+                top: -25px;
+            }
+            div {
+                inset: 0;
+                margin: auto;
+                top: -100px;
+                width: 50px;
+                height: 20px;
+                background: #f3ac3c;
+                border-radius: 10px 10px 0 0;
+                z-index: 1;
+            }
+            div::after {
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                color: #998235;
+                top: 10px;
+                left: 105px;
+                box-shadow: inset -20px 0, 0 30px, -65px 55px 0 15px #f3ac3c,
+                    -115px 55px 0 15px;
+            }
+            div::before {
+                width: 20px;
+                height: 30px;
+                border-radius: 0 0 20px 20px;
+                background: #f3ac3c;
+                box-shadow: 90px -10px #f3ac3c;
+                top: -20px;
+                left: 15px;
+            }
+            i {
+                height: 20px;
+                width: 150px;
+                background: #f3ac3c;
+                border-radius: 20px;
+                top: -40px;
+                left: -25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div><i></i></div>
+    </body>
+</html>

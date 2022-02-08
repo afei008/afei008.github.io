@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            body {
+                background: #6592cf;
+            }
+            div {
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                border: 20px solid;
+                border-radius: 50%;
+                border-color: #060f55 #060f55 transparent transparent;
+            }
+            .a {
+                transform: rotate(135deg);
+                bottom: 40px;
+                left: 140px;
+            }
+            .b,
+            .c {
+                top: 40px;
+                transform: rotate(-45deg);
+            }
+            .b {
+                left: 40px;
+            }
+            .c {
+                right: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            div,
+            i,
+            *::before,
+            *::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                margin: auto;
+            }
+            body {
+                background: #6592cf;
+            }
+            div {
+                position: absolute;
+                top: 20px;
+                width: 150px;
+                height: 150px;
+                border: 10px solid #243d83;
+                border-radius: 50%;
+                clip-path: circle();
+            }
+            div::before {
+                width: 100px;
+                height: 100px;
+                border: 10px solid #243d83;
+                border-radius: 50%;
+                background: #6592cf;
+                top: 200px;
+            }
+            i {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: radial-gradient(
+                    circle,
+                    #243d83 5px,
+                    0,
+                    #6592cf 15px,
+                    0,
+                    #243d83 10px
+                );
+                top: -140px;
+            }
+            .b {
+                top: -60px;
+                left: 140px;
+            }
+            .c {
+                top: 80px;
+                left: 140px;
+            }
+            .d {
+                top: -60px;
+                left: -140px;
+            }
+            .e {
+                top: 80px;
+                left: -140px;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <i class="a"></i>
+        <i class="b"></i>
+        <i class="c"></i>
+        <i class="d"></i>
+        <i class="e"></i>
+    </body>
+</html>

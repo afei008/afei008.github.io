@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            body {
+                background: #f5d6b4;
+            }
+            div {
+                position: absolute;
+                color: #d86f45;
+                top: 150px;
+                left: 70px;
+                width: 60px;
+                height: 30px;
+                border: 20px solid;
+                border-top: 0;
+                border-bottom-right-radius: 90px;
+                border-bottom-left-radius: 90px;
+                -webkit-box-reflect: right 60px;
+            }
+            div::after,
+            div::before {
+                content: '';
+                position: absolute;
+            }
+            div::before {
+                width: 20px;
+                height: 20px;
+                top: -10px;
+                left: -20px;
+                border-radius: 50%;
+                background: #d86f45;
+            }
+            div::after {
+                width: 30px;
+                height: 30px;
+                top: -50px;
+                left: 60px;
+                border: 20px solid;
+                border-right: 0;
+                border-bottom: 0;
+                border-top-left-radius: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            div,
+            i,
+            *::before,
+            *::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                margin: auto;
+            }
+            body {
+                background: #f3ac3c;
+            }
+            body::before {
+                width: 40px;
+                height: 40px;
+                background: #1a4341;
+                border-radius: 50%;
+                border: 10px solid #998235;
+                top: -110px;
+                left: -110px;
+                -webkit-box-reflect: right 50px;
+            }
+            div {
+                width: 150px;
+                height: 150px;
+                background: #998235;
+                clip-path: inset(0 0 round 74px 74px 60px 60px);
+            }
+            div::before {
+                width: 100px;
+                height: 40px;
+                background: #fff;
+                top: 80px;
+                border-radius: 12px 12px 30px 30px;
+            }
+            div::after {
+                width: 50px;
+                height: 50px;
+                background: #1a4341;
+                top: -170px;
+                transform: rotate(45deg);
+            }
+            i {
+                width: 10px;
+                height: 30px;
+                top: 50px;
+                background: #1a4341;
+                -webkit-box-reflect: right -10px;
+            }
+            i::before {
+                width: 20px;
+                height: 10px;
+                border: 10px solid #1a4341;
+                border-top: 0;
+                border-radius: 0 0 20px 20px;
+                left: -30px;
+                top: 30px;
+            }
+            i::after {
+                width: 20px;
+                height: 20px;
+                background: #1a4341;
+                border-radius: 50%;
+                top: -60px;
+                left: -80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div><i></i></div>
+    </body>
+</html>

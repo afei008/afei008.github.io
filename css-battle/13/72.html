@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            div,
+            i,
+            *::before,
+            *::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                margin: auto;
+            }
+            body {
+                background: #243d83;
+            }
+            div::before {
+                width: 65px;
+                height: calc(170px - var(--h));
+                background: #6592cf;
+                border-radius: 50px;
+                transform: rotate(calc(var(--i) * 45deg));
+            }
+            div::after {
+                width: 60px;
+                height: 62px;
+                background: #6592cf;
+                top: -12px;
+                border-radius: 0 0 50px 50px;
+                box-shadow: inset 0 -60px #243d83;
+            }
+            body::after {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                color: #6592cf;
+                box-shadow: -10px -15px, 10px -15px;
+            }
+            i {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: #6592cf;
+                top: -80px;
+                left: -76px;
+                box-shadow: 76px 0 #6592cf;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="--i: 0; --h: 0px"></div>
+        <div style="--i: 1; --h: 6px"></div>
+        <div style="--i: 2; --h: 0px"></div>
+        <div style="--i: 3; --h: 6px"></div>
+        <i></i>
+    </body>
+</html>

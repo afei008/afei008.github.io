@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            body {
+                background: #19191a;
+            }
+            div,
+            div::before {
+                content: '';
+                position: absolute;
+            }
+            div {
+                width: 75px;
+                height: 125px;
+                background: #f9e492;
+                top: 125px;
+                left: 125px;
+            }
+            div::before {
+                width: 150px;
+                height: 150px;
+                top: -75px;
+                border-radius: 50%;
+                background: conic-gradient(
+                    #4f77ff 180deg,
+                    0,
+                    #9ad5ff 270deg,
+                    0,
+                    #4f77ff
+                );
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

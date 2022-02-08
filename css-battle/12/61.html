@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            div,
+            i,
+            *::before,
+            *::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background: #191919;
+            }
+            body {
+                background: #191919;
+            }
+            body::before,
+            body::after {
+                border: 10px solid #5dbcf9;
+            }
+            body::before {
+                top: 66px;
+                width: 30px;
+                height: 30px;
+            }
+            body::after {
+                width: 80px;
+                height: 50px;
+                border-bottom: 0;
+                top: 96px;
+            }
+            div {
+                width: 10px;
+                height: 65px;
+                top: 130px;
+                z-index: 1;
+                background: #5dbcf9;
+            }
+            div::before,
+            div::after {
+                width: 80px;
+                height: 50px;
+                border: 10px solid #5dbcf9;
+                top: 15px;
+                border-bottom: 0;
+                background: initial;
+            }
+            div::before {
+                left: -64px;
+                transform: rotate(-30deg);
+                border-right: 0;
+            }
+            div::after {
+                left: -16px;
+                transform: rotate(30deg);
+                border-left: 0;
+            }
+            i,
+            i::before {
+                background: #5dbcf9;
+                height: 10px;
+            }
+            i {
+                width: 200px;
+                border: 10px solid #191919;
+                left: -105px;
+                top: 64px;
+                z-index: 2;
+            }
+            i::before {
+                width: 110px;
+                top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div><i></i></div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            div,
+            div::before,
+            div::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                margin: auto;
+            }
+            div {
+                width: 250px;
+                height: 250px;
+                box-shadow: inset -250px 0 #243d83, 0 0 0 9999px #6592cf;
+            }
+            div::before {
+                width: 150px;
+                height: 150px;
+                background: #6592cf;
+                transform: rotate(15deg);
+            }
+            div::after {
+                width: 75px;
+                height: 75px;
+                background: #243d83;
+                transform: rotate(30deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

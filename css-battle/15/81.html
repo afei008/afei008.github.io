@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            body {
+                background: #191919;
+            }
+            div {
+                --g: 63px, #191919 20px, 0, #8f8f8f 40px, 0, transparent;
+                position: absolute;
+                inset: 0;
+                margin: auto;
+                top: 3px;
+                width: 326px;
+                height: 105px;
+                background: radial-gradient(
+                        circle at 40px 63px,
+                        #191919 20px,
+                        0,
+                        #714b67 40px,
+                        0,
+                        transparent
+                    ),
+                    radial-gradient(circle at 122px var(--g)),
+                    radial-gradient(circle at 204px var(--g)),
+                    radial-gradient(circle at 286px var(--g));
+            }
+            div::before {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 60px;
+                border-radius: 10px;
+                background: #8f8f8f;
+                left: 142px;
+                top: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

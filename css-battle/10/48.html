@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            div,
+            div::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                margin: auto;
+            }
+            div {
+                width: 200px;
+                height: 100px;
+                background: #fe5f55;
+                margin: 90px auto;
+                border-radius: 20px;
+                box-shadow: 0 20px #a64942, 0 0 0 999px #293462;
+            }
+            div::before {
+                width: 140px;
+                height: 40px;
+                background: #a64942;
+                border-radius: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

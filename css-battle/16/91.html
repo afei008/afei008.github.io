@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            div,
+            *::before,
+            *::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                margin: auto;
+            }
+            body {
+                background: radial-gradient(
+                        circle,
+                        #f6df96 100px,
+                        0,
+                        transparent
+                    ),
+                    linear-gradient(#d25b70 150px, #6cb3a9 150px);
+            }
+            div {
+                width: 200px;
+                clip-path: circle();
+            }
+            div::before {
+                top: 100px;
+                height: 100px;
+                background: repeating-linear-gradient(
+                    #6cb3a9 0 15px,
+                    #f6df96 15px 25px
+                );
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

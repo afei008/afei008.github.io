@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            body {
+                background: #191919;
+            }
+            div {
+                position: absolute;
+                inset: 0;
+                margin: auto;
+                width: 40px;
+                height: 180px;
+                background: var(--c, #fe5f55);
+                border-radius: 0 0 50px 50px;
+                top: -220px;
+                transform-origin: center 200px;
+                transform: rotate(calc(var(--i) * 90deg));
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div style="--i: 1; --c: #a64942"></div>
+        <div style="--i: 2"></div>
+        <div style="--i: 3; --c: #a64942"></div>
+    </body>
+</html>

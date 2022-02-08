@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            body {
+                background: #007065;
+            }
+            div {
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-width: 125px;
+                border-style: solid;
+                top: 0px;
+                left: 75px;
+                border-color: transparent transparent #00a79d transparent;
+                transform-origin: center bottom;
+                transform: rotateX(37deg);
+            }
+            .b {
+                border-color: transparent transparent #f5c181 transparent;
+                top: -50px;
+            }
+            .c {
+                border-color: transparent transparent #ffeecf transparent;
+                top: -100px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 此处使用伪元素也可实现，但是在网站上对比的时候会有 1px 的错位，所以为了保证显示效果，使用独立的 div 元素实现 -->
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+    </body>
+</html>

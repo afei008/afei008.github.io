@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            body {
+                background: #293462;
+            }
+            div {
+                position: absolute;
+                inset: 0;
+                margin: auto;
+                width: 200px;
+                height: 200px;
+                background: #fff1c1;
+                clip-path: circle();
+            }
+            div::before {
+                content: '';
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                background: #fe5f55;
+                bottom: -40px;
+                left: 66px;
+                transform: rotate(45deg);
+                box-shadow: -29px 128px #fe5f55;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
