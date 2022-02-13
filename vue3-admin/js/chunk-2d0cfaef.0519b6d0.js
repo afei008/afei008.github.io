@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0cfaef"],{6582:function(e,n,c){"use strict";c.r(n);var t=c("7a23");function o(e,n,c,o,u,a){return Object(t["openBlock"])(),Object(t["createElementBlock"])("div",null,"menu1-2-1")}var u=Object(t["defineComponent"])({name:"Menu1-2-1"}),a=c("6b0d"),r=c.n(a);const d=r()(u,[["render",o]]);n["default"]=d}}]);
