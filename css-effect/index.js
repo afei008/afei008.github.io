@@ -14,6 +14,7 @@ let data = [
     { src: 'effect-11/index.html' },
     { src: 'effect-12/index.html' },
     { src: 'effect-13/index.html' },
+    { src: 'effect-14/index.html' },
 ];
 
 data.forEach(item => {
