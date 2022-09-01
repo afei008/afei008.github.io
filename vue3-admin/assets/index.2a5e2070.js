@@ -1,1 +1,0 @@
-import{d as s,S as a,U as e,a1 as n,f as r,E as t}from"./vue.3a1c5826.js";import{_ as o}from"./index.1351dcf1.js";import"./antd.e0f179d3.js";const d=s({name:"Menu1-1"}),u=t(" menu1-1 ");const f=o(d,[["render",function(s,t,o,d,f,i){const m=a("router-view");return e(),n("div",null,[u,r(m)])}]]);export{f as default};
