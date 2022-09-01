@@ -1,0 +1,1 @@
+import{d as a,a9 as e,aa as r,U as s,a1 as t}from"./vue.3a1c5826.js";import{_ as n}from"./index.1351dcf1.js";import"./antd.e0f179d3.js";const p=n(a({name:"RedirectView",setup(){const a=e(),s=r(),{params:t,query:n}=a,{path:p}=t;s.replace({path:`/${p}`,query:n})}}),[["render",function(a,e,r,n,p,o){return s(),t("span")}]]);export{p as default};
