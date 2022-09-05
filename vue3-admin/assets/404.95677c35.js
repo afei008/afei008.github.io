@@ -1,0 +1,1 @@
+import{d as a,U as e,a1 as r}from"./vue.3a1c5826.js";import{_ as n}from"./index.cbb79f16.js";import"./antd.e0f179d3.js";const s=n(a({name:"404View"}),[["render",function(a,n,s,t,o,d){return e(),r("div",null,"404")}]]);export{s as default};
