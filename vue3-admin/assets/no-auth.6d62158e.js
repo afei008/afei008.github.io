@@ -1,1 +1,0 @@
-import{d as a,U as t,a1 as n}from"./vue.3a1c5826.js";import{_ as o}from"./index.cbb79f16.js";import"./antd.e0f179d3.js";const r=o(a({name:"NoAuth"}),[["render",function(a,o,r,e,s,d){return t(),n("div",null,"no auth")}]]);export{r as default};
