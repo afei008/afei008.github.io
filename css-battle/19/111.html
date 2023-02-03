@@ -1,0 +1,41 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../base.css" />
+        <style>
+            body {
+                background: #f3ac3c;
+            }
+            div {
+                position: absolute;
+                top: 40px;
+                left: 40%;
+                transform-origin: 40px 110px;
+                transform: rotate(calc(var(--i) * 45deg));
+            }
+            div::after {
+                content: '';
+                position: absolute;
+                transform: rotate(135deg);
+                width: 80px;
+                height: 80px;
+                border-radius: 50% 0 50% 50%;
+                background: #254241;
+            }
+            div:nth-child(3) {
+                left: 37.5%;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="--i: 0"></div>
+        <div style="--i: 4"></div>
+        <div style="--i: 6"></div>
+    </body>
+</html>
