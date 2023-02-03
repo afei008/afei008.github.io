@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-0727e3dd","path":"/js/practice/copy.html","title":"点击按钮复制内容","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"js/practice/copy.md"}');export{t as data};

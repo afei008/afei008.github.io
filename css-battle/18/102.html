@@ -7,9 +7,104 @@
         <title>Document</title>
         <link rel="stylesheet" href="../base.css" />
         <style>
+            ::after,
+            ::before {
+                position: absolute;
+                content: '';
+            }
+
+            body {
+                background: #000;
+            }
+
+            body::before {
+                position: absolute;
+                bottom: 60px;
+                left: 193px;
+                width: 15px;
+                height: 20px;
+                background: #fff;
+                box-shadow: -20px 0 #fff, 20px 0 #fff;
+            }
+
+            div {
+                position: relative;
+                width: 150px;
+                height: 100px;
+                margin: 110px auto 0;
+                background: #fff;
+                border-radius: 100px;
+            }
+
+            div::after,
+            div::before {
+                top: 50%;
+                width: 50px;
+                height: 40px;
+                background: #000;
+                border-radius: 50%;
+                transform: translateY(-50%) rotate(calc(var(--i) * -30deg));
+            }
+
+            div::before {
+                left: 20px;
+                --i: 1;
+            }
+
+            div::after {
+                right: 20px;
+                --i: -1;
+            }
+
+            i {
+                position: absolute;
+                width: 20px;
+                height: 23px;
+                background: #fff;
+                transform: rotate(calc(var(--i) * 45deg));
+            }
+
+            i::before {
+                top: -15px;
+                left: -10px;
+                width: 25px;
+                height: 25px;
+                background: #fff;
+                border-radius: 50%;
+                box-shadow: 15px 0 #fff;
+            }
+
+            .a {
+                top: -9px;
+                left: -13px;
+                --i: 7;
+            }
+
+            .b {
+                top: -9px;
+                right: -13px;
+                --i: 1;
+            }
+
+            .c {
+                right: -13px;
+                bottom: -9px;
+                --i: 3;
+            }
+
+            .d {
+                bottom: -9px;
+                left: -13px;
+                --i: 5;
+            }
         </style>
     </head>
     <body>
-        <div></div>
+        <div>
+            <i class="a"></i>
+            <i class="b"></i>
+            <i class="c"></i>
+            <i class="d"></i>
+        </div>
     </body>
 </html>

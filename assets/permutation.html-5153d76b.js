@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-28558ba0","path":"/js/algorithm/permutation.html","title":"全排列算法","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"方法 1：递归","slug":"方法-1-递归","link":"#方法-1-递归","children":[]}],"git":{},"filePathRelative":"js/algorithm/permutation.md"}');export{t as data};

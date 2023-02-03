@@ -1,0 +1,1 @@
+import{_ as s,c as t,p as c,q as o}from"./framework-49860b1b.js";const a=t({props:{src:{type:String,default:""}}}),_=["src"];function n(e,r,f,p,d,l){return c(),o("iframe",{class:"iframe",src:e.src},null,8,_)}const u=s(a,[["render",n],["__scopeId","data-v-bab74f35"],["__file","effect-load.vue"]]);export{u as default};

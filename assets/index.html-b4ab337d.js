@@ -1,0 +1,1 @@
+import{_ as t,p as a,q as n,R as o,Q as e,t as r}from"./framework-49860b1b.js";const c={},s=e("h1",{id:"笔记",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#笔记","aria-hidden":"true"},"#"),r(" 笔记")],-1),d=e("p",null,"记录日常工作学习中遇到的各种东西",-1);function _(i,l){return a(),n("div",null,[o(" @format "),s,d])}const f=t(c,[["render",_],["__file","index.html.vue"]]);export{f as default};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3f1cff78","path":"/js/practice/iframe-get-variable.html","title":"iframe 获取变量","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"父获取子","slug":"父获取子","link":"#父获取子","children":[]},{"level":2,"title":"子获取父","slug":"子获取父","link":"#子获取父","children":[]}],"git":{},"filePathRelative":"js/practice/iframe-get-variable.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2d1fa187","path":"/vue/binding-principle.html","title":"双向绑定原理","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"简单实现代码如下","slug":"简单实现代码如下","link":"#简单实现代码如下","children":[]}],"git":{},"filePathRelative":"vue/binding-principle.md"}');export{e as data};
