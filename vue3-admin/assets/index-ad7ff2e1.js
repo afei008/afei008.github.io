@@ -1,1 +1,0 @@
-import{d as e,R as r,Z as n}from"./vue-114e4185.js";import{_ as u}from"./_plugin-vue_export-helper-1b428a4d.js";const o=u(e({name:"Menu2"}),[["render",function(e,u,o,s,t,a){return r(),n("div",null,"menu2")}]]);export{o as default};
