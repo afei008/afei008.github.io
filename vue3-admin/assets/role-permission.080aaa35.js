@@ -1,1 +1,0 @@
-import{d as e,U as r,a1 as s}from"./vue.3a1c5826.js";import{_ as o}from"./index.2822d240.js";import"./antd.e0f179d3.js";const n=o(e({name:"RolePermission"}),[["render",function(e,o,n,a,i,t){return r(),s("div",null,"role-permission")}]]);export{n as default};
