@@ -1,0 +1,1 @@
+function o(o,e){let l,t;if(void 0===e)for(const f of o)null!=f&&(void 0===l?f>=f&&(l=t=f):(l>f&&(l=f),t<f&&(t=f)));else{let f=-1;for(let n of o)null!=(n=e(n,++f,o))&&(void 0===l?n>=n&&(l=t=n):(l>n&&(l=n),t<n&&(t=n)))}return[l,t]}export{o as e};
