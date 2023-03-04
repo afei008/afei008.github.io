@@ -1,0 +1,1 @@
+import{d as e,S as r,a1 as o}from"./vue-8d5f356c.js";import{_ as s}from"./plugin-vueexport-helper-1b428a4d.js";const n=s(e({name:"RolePermission"}),[["render",function(e,s,n,i,a,t){return r(),o("div",null,"role-permission")}]]);export{n as default};

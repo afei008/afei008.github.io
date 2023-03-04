@@ -1,0 +1,1 @@
+import{d as e,Z as r,S as s,a1 as a,E as n,f as o}from"./vue-8d5f356c.js";import{_ as t}from"./plugin-vueexport-helper-1b428a4d.js";const u=t(e({name:"Menu11"}),[["render",function(e,t,u,i,m,p){const f=r("router-view");return s(),a("div",null,[n(" menu1-1 "),o(f)])}]]);export{u as default};

@@ -1,0 +1,1 @@
+import{d as e,S as r,a1 as a}from"./vue-8d5f356c.js";import{_ as n}from"./plugin-vueexport-helper-1b428a4d.js";const o=n(e({name:"404View"}),[["render",function(e,n,o,s,t,u){return r(),a("div",null,"404")}]]);export{o as default};
