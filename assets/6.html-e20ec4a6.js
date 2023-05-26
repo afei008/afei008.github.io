@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-10d3b0ac","path":"/js/practice/6.html","title":"es6 转为 es5 过程","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"js/practice/6.md"}');export{t as data};

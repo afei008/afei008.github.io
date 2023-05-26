@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-3ebd60d4","path":"/css/practice/2.html","title":"基础三栏布局","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"css/practice/2.md"}');export{t as data};

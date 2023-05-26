@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-0a7d8155","path":"/js/practice/birthday.html","title":"生日概率","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"js/practice/birthday.md"}');export{t as data};

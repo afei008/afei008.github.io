@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-c1c15b78","path":"/read-notes/ts/9.html","title":"第 9 章 TypeScript 项目实践","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"5.1 类型注解","slug":"_5-1-类型注解","link":"#_5-1-类型注解","children":[]},{"level":2,"title":"原始类型","slug":"原始类型","link":"#原始类型","children":[]}],"git":{},"filePathRelative":"read-notes/ts/9.md"}');export{e as data};

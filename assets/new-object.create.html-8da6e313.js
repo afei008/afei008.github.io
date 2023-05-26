@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-45a68059","path":"/js/basis/new-object.create.html","title":"new 和 Object.create 的区别","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"js/basis/new-object.create.md"}');export{e as data};

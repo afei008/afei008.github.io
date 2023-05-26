@@ -1,0 +1,1 @@
+const l=JSON.parse('{"key":"v-7f760d56","path":"/js/algorithm/1.html","title":"常见算法原理","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"快排","slug":"快排","link":"#快排","children":[]},{"level":2,"title":"冒泡","slug":"冒泡","link":"#冒泡","children":[]}],"git":{},"filePathRelative":"js/algorithm/1.md"}');export{l as data};

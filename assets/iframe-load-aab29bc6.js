@@ -1,0 +1,1 @@
+import{_ as s,c as a,p as o,q as c}from"./framework-49860b1b.js";const r=a({props:{src:{type:String,default:""}}}),t=["src"];function _(e,n,f,p,d,i){return o(),c("iframe",{class:"iframe",src:e.src},null,8,t)}const m=s(r,[["render",_],["__scopeId","data-v-406fbfc3"],["__file","iframe-load.vue"]]);export{m as default};

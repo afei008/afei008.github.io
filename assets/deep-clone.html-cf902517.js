@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-eb07ee02","path":"/js/basis/deep-clone.html","title":"深拷贝","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"最基本版本","slug":"最基本版本","link":"#最基本版本","children":[]},{"level":2,"title":"优化版本","slug":"优化版本","link":"#优化版本","children":[]}],"git":{},"filePathRelative":"js/basis/deep-clone.md"}');export{e as data};

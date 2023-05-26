@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-5228efe9","path":"/vue/v-model.html","title":"v-model","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"本质","slug":"本质","link":"#本质","children":[]},{"level":2,"title":"自定义 v-model","slug":"自定义-v-model","link":"#自定义-v-model","children":[]}],"git":{},"filePathRelative":"vue/v-model.md"}');export{e as data};

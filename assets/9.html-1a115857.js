@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-59c7db4b","path":"/read-notes/canvas/9.html","title":"第九章 游戏开发","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"read-notes/canvas/9.md"}');export{a as data};

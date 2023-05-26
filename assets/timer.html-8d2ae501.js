@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-9765930a","path":"/js/practice/timer.html","title":"定时器","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"setTimeout 机制","slug":"settimeout-机制","link":"#settimeout-机制","children":[]},{"level":2,"title":"校正","slug":"校正","link":"#校正","children":[]}],"git":{},"filePathRelative":"js/practice/timer.md"}');export{t as data};

@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-13701eae","path":"/js/algorithm/quick-sort.html","title":"快速排序","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"思想","slug":"思想","link":"#思想","children":[]},{"level":2,"title":"代码","slug":"代码","link":"#代码","children":[]}],"git":{},"filePathRelative":"js/algorithm/quick-sort.md"}');export{t as data};

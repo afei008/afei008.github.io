@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3845df16","path":"/frame/vue/10.html","title":"props 与 slot 的区别","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"props","slug":"props","link":"#props","children":[]},{"level":2,"title":"slot","slug":"slot","link":"#slot","children":[]}],"git":{},"filePathRelative":"frame/vue/10.md"}');export{e as data};

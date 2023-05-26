@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-092a3664","path":"/js/practice/15.html","title":"模拟 eval","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"js/practice/15.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-0733c3c4","path":"/frame/vue/9.html","title":"MVVM 与 MVC","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"MVVM","slug":"mvvm","link":"#mvvm","children":[]},{"level":2,"title":"MVC","slug":"mvc","link":"#mvc","children":[]}],"git":{},"filePathRelative":"frame/vue/9.md"}');export{e as data};

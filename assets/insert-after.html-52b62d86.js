@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-3d17f86a","path":"/js/practice/insert-after.html","title":"实现 insertAfter","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"js/practice/insert-after.md"}');export{t as data};

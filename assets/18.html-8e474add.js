@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-00896eab","path":"/js/practice/18.html","title":"节流与防抖","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"节流","slug":"节流","link":"#节流","children":[]},{"level":2,"title":"防抖","slug":"防抖","link":"#防抖","children":[]}],"git":{},"filePathRelative":"js/practice/18.md"}');export{e as data};

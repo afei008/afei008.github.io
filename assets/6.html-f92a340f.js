@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-905eea26","path":"/css/tricks/6.html","title":"scroll-snap-*","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"示例","slug":"示例","link":"#示例","children":[]}],"git":{},"filePathRelative":"css/tricks/6.md"}');export{t as data};

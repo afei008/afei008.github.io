@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-0bab2502","path":"/js/basis/8.html","title":"深拷贝","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"最基本版本","slug":"最基本版本","link":"#最基本版本","children":[]},{"level":2,"title":"优化版本","slug":"优化版本","link":"#优化版本","children":[]}],"git":{},"filePathRelative":"js/basis/8.md"}');export{e as data};

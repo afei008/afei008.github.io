@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-dd505424","path":"/react/redux.html","title":"redux","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"redux 三大原则","slug":"redux-三大原则","link":"#redux-三大原则","children":[]}],"git":{},"filePathRelative":"react/redux.md"}');export{e as data};
