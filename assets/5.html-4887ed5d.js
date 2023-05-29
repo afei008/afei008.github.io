@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-52f478cf","path":"/read-notes/canvas/5.html","title":"第五章 动画","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1685078174000,"contributors":[{"name":"zhangfei","email":"598867013@qq.com","commits":1}]},"filePathRelative":"read-notes/canvas/5.md"}');export{a as data};

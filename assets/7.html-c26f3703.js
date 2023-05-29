@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-565e2a0d","path":"/read-notes/canvas/7.html","title":"第七章 物理效果","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1685078174000,"contributors":[{"name":"zhangfei","email":"598867013@qq.com","commits":1}]},"filePathRelative":"read-notes/canvas/7.md"}');export{a as data};

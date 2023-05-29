@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-8621d66c","path":"/css/tricks/9.html","title":"善用 -1","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"示例 1","slug":"示例-1","link":"#示例-1","children":[]},{"level":2,"title":"示例 2","slug":"示例-2","link":"#示例-2","children":[]}],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"css/tricks/9.md"}');export{t as data};

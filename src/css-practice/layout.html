@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>三栏布局</title>
+        <style>
+            .cup:after,
+            .fly:after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            .cup,
+            .fly,
+            .middle,
+            .left,
+            .right {
+                height: 200px;
+            }
+            .middle,
+            .left,
+            .right {
+                position: relative;
+                float: left;
+            }
+            .middle {
+                background: skyblue;
+            }
+            .left {
+                background: red;
+            }
+            .right {
+                background: tomato;
+            }
+            .cup {
+                padding: 0 250px 0 150px;
+            }
+            .cup .middle {
+                width: 100%;
+                min-width: 400px;
+            }
+            .cup .left {
+                width: 150px;
+                margin-left: -100%;
+                left: -150px;
+            }
+            .cup .right {
+                width: 250px;
+                margin-left: -250px;
+                right: -250px;
+            }
+            .fly .middle {
+                width: 100%;
+            }
+            .fly .left {
+                width: 150px;
+                margin-left: -100%;
+            }
+            .fly .right {
+                width: 250px;
+                margin-left: -250px;
+            }
+            .fly .middle-wrap {
+                margin: 0 250px 0 150px;
+            }
+            .flex {
+                display: flex;
+            }
+            .flex .left {
+                order: -1;
+                width: 150px;
+            }
+            .flex .middle {
+                width: calc(100% - 400px);
+            }
+            .flex .right {
+                width: 250px;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: 150px auto 250px;
+                grid-template-areas: 'a b c';
+            }
+            /* 以下三种方式都可以排序，order 方式是偶然发现的 */
+            .grid .middle {
+                /* grid-column-start: 2; */
+                /* grid-area: b; */
+            }
+            .grid .left {
+                /* grid-column-start: 1;
+                grid-row-start: 1; */
+                /* grid-area: a; */
+                order: -1;
+            }
+            .grid .right {
+                /* grid-column-start: 3;
+                grid-row-start: 1; */
+                /* grid-area: c; */
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>圣杯</p>
+            <div class="cup">
+                <div class="middle">middle</div>
+                <div class="left">left</div>
+                <div class="right">right</div>
+            </div>
+        </div>
+        <div>
+            <p>双飞翼</p>
+            <div class="fly">
+                <div class="middle">
+                    <div class="middle-wrap">middle</div>
+                </div>
+                <div class="left">left</div>
+                <div class="right">right</div>
+            </div>
+        </div>
+        <div>
+            <p>flex</p>
+            <div class="flex">
+                <div class="middle">middle</div>
+                <div class="left">left</div>
+                <div class="right">right</div>
+            </div>
+        </div>
+        <div>
+            <p>grid</p>
+            <div class="grid">
+                <div class="middle">middle</div>
+                <div class="left">left</div>
+                <div class="right">right</div>
+            </div>
+        </div>
+    </body>
+</html>

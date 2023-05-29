@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-35cc1be5","path":"/framework/vue/12.html","title":"vue-router 边界情况","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"无法返回顶部","slug":"无法返回顶部","link":"#无法返回顶部","children":[]}],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"framework/vue/12.md"}');export{e as data};

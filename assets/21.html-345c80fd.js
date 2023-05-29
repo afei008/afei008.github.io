@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-0fa5bbdc","path":"/js/basis/21.html","title":"typeof 常见返回值","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1685078174000,"contributors":[{"name":"zhangfei","email":"598867013@qq.com","commits":1}]},"filePathRelative":"js/basis/21.md"}');export{t as data};
