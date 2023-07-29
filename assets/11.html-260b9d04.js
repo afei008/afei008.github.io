@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-071ac0dc","path":"/framework/flutter/11.html","title":"async 包","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"使用示例","slug":"使用示例","link":"#使用示例","children":[]}],"git":{"updatedTime":1689068283000,"contributors":[{"name":"af","email":"598867013@qq.com","commits":3}]},"filePathRelative":"framework/flutter/11.md"}');export{t as data};

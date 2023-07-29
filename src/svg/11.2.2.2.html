@@ -1,0 +1,22 @@
+<!-- @format -->
+
+<svg>
+    <defs>
+        <filter id="drop-shadow">
+            <feGaussianBlur
+                in="SourceAlpha"
+                stdDeviation="2"
+                result="blur"
+            ></feGaussianBlur>
+            <feOffset in="blur" dx="4" dy="4" result="offsetBlur"></feOffset>
+            <feMerge>
+                <feMergeNode in="offsetBlur"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <g id="flower" filter="url(#drop-shadow)">
+        <image xlink:href="./flower.svg"></image>
+    </g>
+</svg>

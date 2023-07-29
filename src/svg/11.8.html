@@ -1,0 +1,48 @@
+<!-- @format -->
+
+<svg>
+    <defs>
+        <filter id="flood-filter" x="0" y="0" width="100%" height="100%">
+            <feFlood
+                flood-color="#993300"
+                flood-opacity="0.8"
+                result="tint"
+            ></feFlood>
+            <feComposite
+                in="tint"
+                in2="SourceGraphic"
+                operator="in"
+            ></feComposite>
+        </filter>
+
+        <filter id="tile-filter" x="0" y="0" width="100%" height="100%">
+            <feImage
+                xlink:href="./t.jpeg"
+                width="32"
+                height="32"
+                result="cloth"
+            ></feImage>
+            <feTile in="cloth" result="cloth"></feTile>
+            <feComposite
+                in="cloth"
+                in2="SourceGraphic"
+                operator="in"
+            ></feComposite>
+        </filter>
+
+        <g id="flower">
+            <image xlink:href="./flower.svg"></image>
+        </g>
+    </defs>
+
+    <use
+        xlink:href="#flower"
+        transform="translate(0, 0)"
+        style="filter: url(#flood-filter)"
+    ></use>
+    <use
+        xlink:href="#flower"
+        transform="translate(110, 0)"
+        style="filter: url(#tile-filter)"
+    ></use>
+</svg>

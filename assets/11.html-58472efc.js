@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-3ba9876f","path":"/css/tricks/11.html","title":"使用伪元素","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1685327240000,"contributors":[{"name":"af","email":"598867013@qq.com","commits":1}]},"filePathRelative":"css/tricks/11.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-4086fbfe","path":"/read-notes/svg/15.html","title":"第 15 章 生成 SVG","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1688525153000,"contributors":[{"name":"af","email":"598867013@qq.com","commits":1}]},"filePathRelative":"read-notes/svg/15.md"}');export{e as data};

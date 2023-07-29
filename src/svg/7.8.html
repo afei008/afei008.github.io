@@ -1,0 +1,23 @@
+<!-- @format -->
+
+<svg >
+    <defs>
+        <g id="g" style="stroke: red">
+            <!-- 顺时针方向的路径 -->
+            <path
+                d="M 0 0, 60 0, 60 60, 0 60 Z M 15 15, 45 15, 45 45, 15 45Z"
+            />
+        </g>
+        <g id="g2" style="stroke: red">
+            <!-- 外部路径为顺时针方向，内部路径为逆时针方向 -->
+            <path
+                d="M 0 0, 60 0, 60 60, 0 60 Z M 15 15, 15 45, 45 45, 45 15Z"
+            />
+        </g>
+    </defs>
+
+    <use xlink:href="#g" style="fill-rule: nonzero" />
+    <use xlink:href="#g2" style="fill-rule: nonzero" x="100" />
+    <use xlink:href="#g" style="fill-rule: evenodd" y="80" />
+    <use xlink:href="#g2" style="fill-rule: evenodd" x="100" y="80" />
+</svg>

@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-092a3664","path":"/js/practice/15.html","title":"模拟 eval","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1685327240000,"contributors":[{"name":"af","email":"598867013@qq.com","commits":1},{"name":"zhangfei","email":"598867013@qq.com","commits":1}]},"filePathRelative":"js/practice/15.md"}');export{a as data};

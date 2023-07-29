@@ -1,0 +1,19 @@
+<!-- @format -->
+
+<svg>
+    <defs>
+        <filter id="self-displace">
+            <feDisplacementMap
+                scale="10"
+                xChannelSelector="R"
+                yChannelSelector="G"
+                in="SourceGraphic"
+                in2="SourceGraphic"
+            />
+        </filter>
+        <g id="flower">
+            <image xlink:href="./flower.svg"></image>
+        </g>
+    </defs>
+    <use xlink:href="#flower" style="filter: url(#self-displace)" />
+</svg>

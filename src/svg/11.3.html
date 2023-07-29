@@ -1,0 +1,28 @@
+<!-- @format -->
+
+<svg>
+    <defs>
+        <filter id="glow">
+            <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0
+                        0 0 0 0.9 0
+                        0 0 0 0.9 0
+                        0 0 0 1 0"
+            ></feColorMatrix>
+            <feGaussianBlur
+                stdDeviation="2.5"
+                result="coloredBlur"
+            ></feGaussianBlur>
+            <feMerge>
+                <feMergeNode in="coloredBlur"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="120" y="50" style="filter: url(#glow); fill: #000; font-size: 18">
+        spring
+        <tspan x="120" y="70">flower</tspan>
+    </text>
+</svg>

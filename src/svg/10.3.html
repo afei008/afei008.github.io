@@ -1,0 +1,58 @@
+<!-- @format -->
+
+<svg width="100%" height="300px">
+    <defs>
+        <path id="upper-curve" d="M -8 154 A 162 130 0 1 1 316 154" />
+        <path id="lower-curve" d="M -21 154 A 175 140 0 1 0 329 154" />
+
+        <!-- 添加径向渐变及蒙版 -->
+        <radialGradient id="fade">
+            <stop offset="0%" style="stop-color: white; stop-opacity: 1"></stop>
+            <stop
+                offset="85%"
+                style="stop-color: white; stop-opacity: 0.5"
+            ></stop>
+            <stop
+                offset="100%"
+                style="stop-color: white; stop-opacity: 0"
+            ></stop>
+        </radialGradient>
+        <mask id="fademask" maskContentUnits="objectBoundingBox">
+            <rect
+                x="0"
+                y="0"
+                width="1"
+                height="1"
+                style="fill: url(#fade)"
+            ></rect>
+        </mask>
+    </defs>
+    <ellipse cx="154" cy="154" rx="150" ry="120" style="fill: #999999" />
+    <ellipse cx="152" cy="152" rx="150" ry="120" style="fill: #cceeff" />
+    <!-- 浅红色大半圆填充符号的上半部分，其下方“浸入"符号左下方的浅红色小半圆 -->
+    <path
+        d="M 302 152 A 150 120, 0, 1, 0, 2 152 
+ A 75 60, 0, 1, 0, 152 152"
+        style="fill: #ffcccc"
+    />
+    <!-- 浅蓝色小半圆，填充符号右上方 -->
+    <path d="M 152 152 A 75 60, 0, 1, 1, 302 152" style="fill: #cceeff" />
+    <text style="font-size: 24px; text-anchor: middle">
+        <textPath xlink:href="#upper-curve" startOffset="50%">
+            这是在上面的文字
+        </textPath>
+    </text>
+    <text style="font-size: 14px; text-anchor: middle">
+        <textPath xlink:href="#lower-curve" startOffset="50%">
+            这是在下面的文字
+        </textPath>
+    </text>
+    <image
+        xlink:href="./t.jpeg"
+        x="72"
+        y="92"
+        width="160"
+        height="120"
+        style="mask: url(#fademask)"
+    ></image>
+</svg>

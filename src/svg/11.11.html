@@ -1,0 +1,21 @@
+<!-- @format -->
+
+<svg width="100%">
+    <defs>
+        <g id="flower" stroke-width="2">
+            <image xlink:href="./flower.svg"></image>
+        </g>
+
+        <filter id="erode">
+            <feMorphology operator="erode" radius="1"></feMorphology>
+        </filter>
+
+        <filter id="dilate">
+            <feMorphology operator="dilate" radius="1"></feMorphology>
+        </filter>
+    </defs>
+
+    <use xlink:href="#flower"></use>
+    <use xlink:href="#flower" transform="translate(150, 0)" style="filter:url(#erode);"></use>
+    <use xlink:href="#flower" transform="translate(300, 0)" style="filter:url(#dilate);"></use>
+</svg>

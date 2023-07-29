@@ -1,0 +1,55 @@
+<!-- @format -->
+
+<svg>
+    <defs>
+        <path
+            id="curve"
+            d="M 0 0 Q 5 20 10 10 T 20 20"
+            style="stroke: black; fill: none"
+        ></path>
+        <filter
+            id="diff-light"
+            color-interpolation-filters="sRGB"
+            x="0"
+            y="0"
+            width="100%"
+            height="100%"
+        >
+            <feImage
+                xlink:href="#curve"
+                result="tile"
+                width="20"
+                height="20"
+            ></feImage>
+            <feTile in="tile" result="tile"></feTile>
+            <feDiffuseLighting
+                in="tile"
+                lighting-color="#ffffcc"
+                surfaceScale="1"
+                diffuseConstant="0.5"
+                result="diffuseOutput"
+            >
+                <fePointLight x="0" y="50" z="50"></fePointLight>
+            </feDiffuseLighting>
+            <feComposite
+                in="diffuseOutput"
+                in2="SourceGraphic"
+                operator="in"
+                result="diffuseOutput"
+            ></feComposite>
+            <feBlend
+                in="diffuseOutput"
+                in2="SourceGraphic"
+                mode="screen"
+            ></feBlend>
+        </filter>
+    </defs>
+
+    <circle
+        id="green-light"
+        cx="50"
+        cy="50"
+        r="50"
+        style="fill: #060; filter: url(#diff-light)"
+    ></circle>
+</svg>

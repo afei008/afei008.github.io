@@ -1,0 +1,157 @@
+<!-- @format -->
+<style>
+    .svg-wrap {
+        display: inline-block;
+        text-align: center;
+    }
+    .svg {
+        border: 1px solid;
+    }
+</style>
+<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <g id="cat" style="transform: scale(0.6)">
+            <circle
+                cx="70"
+                cy="95"
+                r="50"
+                style="stroke: black; fill: none"
+            ></circle>
+            <circle
+                cx="55"
+                cy="80"
+                r="5"
+                stroke="black"
+                fill="#339933"
+            ></circle>
+            <circle
+                cx="85"
+                cy="80"
+                r="5"
+                stroke="black"
+                fill="#339933"
+            ></circle>
+            <g id="whiskers">
+                <line
+                    x1="75"
+                    y1="95"
+                    x2="135"
+                    y2="85"
+                    style="stroke: black"
+                ></line>
+                <line
+                    x1="75"
+                    y1="95"
+                    x2="135"
+                    y2="105"
+                    style="stroke: black"
+                ></line>
+            </g>
+            <use
+                xlink:href="#whiskers"
+                transform="scale(-1, 1) translate(-140, 0)"
+            ></use>
+            <polyline
+                points="108 62, 90 10, 70 45, 50, 10, 32, 62"
+                style="stroke: black; fill: none"
+            ></polyline>
+            <polyline
+                points="35 110, 45 120, 95 120, 105, 110"
+                style="stroke: black; fill: none"
+            ></polyline>
+            <path
+                d="M 75 90 L 65 90 A 5 10 0 0 0 75 90"
+                style="stroke: black; fill: #ffcccc"
+            ></path>
+            <text
+                x="60"
+                y="165"
+                style="
+                    font-family: sans-serif;
+                    font-size: 14px;
+                    stroke: none;
+                    fill: black;
+                "
+            >
+                Cat
+            </text>
+        </g>
+    </defs>
+</svg>
+
+<div class="svg-wrap">
+    <svg
+        class="svg"
+        preserveAspectRatio="xMinYMin slice"
+        viewBox="0 0 90 90"
+        width="45"
+        height="135"
+    >
+        <use xlink:href="#cat"></use>
+    </svg>
+    <p>*yMin</p>
+</div>
+<div class="svg-wrap">
+    <svg
+        class="svg"
+        preserveAspectRatio="xMidYMid slice"
+        viewBox="0 0 90 90"
+        width="45"
+        height="135"
+    >
+        <use xlink:href="#cat"></use>
+    </svg>
+    <p>*yMid</p>
+</div>
+<div class="svg-wrap">
+    <svg
+        class="svg"
+        preserveAspectRatio="xMaxYMax slice"
+        viewBox="0 0 90 90"
+        width="45"
+        height="135"
+    >
+        <use xlink:href="#cat"></use>
+    </svg>
+    <p>*yMax</p>
+</div>
+<div class="svg-wrap">
+    <div>
+        <svg
+            class="svg"
+            preserveAspectRatio="xMinYMin slice"
+            viewBox="0 0 90 90"
+            width="135"
+            height="45"
+        >
+            <use xlink:href="#cat"></use>
+        </svg>
+        <p>xMin*</p>
+    </div>
+
+    <div>
+        <svg
+            class="svg"
+            preserveAspectRatio="xMidYMid slice"
+            viewBox="0 0 90 90"
+            width="135"
+            height="45"
+        >
+            <use xlink:href="#cat"></use>
+        </svg>
+        <p>xMid*</p>
+    </div>
+
+    <div>
+        <svg
+            class="svg"
+            preserveAspectRatio="xMaxYMax slice"
+            viewBox="0 0 90 90"
+            width="135"
+            height="45"
+        >
+            <use xlink:href="#cat"></use>
+        </svg>
+        <p>xMax*</p>
+    </div>
+</div>

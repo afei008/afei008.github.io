@@ -1,0 +1,29 @@
+<!-- @format -->
+
+<svg>
+    <defs>
+        <filter id="brightness-shadow" filterUnits="objectBoundingBox">
+            <feImage xlink:href="./t.jpeg" result="sky"></feImage>
+            <feComponentTransfer in="sky" result="sky">
+                <feFuncB type="linear" slope="3" intercept="0"></feFuncB>
+                <feFuncR type="linear" slope="1.5" intercept="0.2"></feFuncR>
+                <feFuncG type="linear" slope="1.5" intercept="0.2"></feFuncG>
+            </feComponentTransfer>
+            <feGaussianBlur
+                in="SourceAlpha"
+                stdDeviation="2"
+                result="blur"
+            ></feGaussianBlur>
+            <feOffset in="blur" dx="4" dy="4" result="offsetBlur"></feOffset>
+            <feMerge>
+                <feMergeNode in="sky"></feMergeNode>
+                <feMergeNode in="offsetBlur"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <g id="flower" style="filter: url(#brightness-shadow)">
+        <image xlink:href="./flower.svg"></image>
+    </g>
+</svg>

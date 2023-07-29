@@ -1,0 +1,19 @@
+<!-- @format -->
+
+<svg>
+    <defs>
+        <filter id="emboss">
+            <feConvolveMatrix
+                preserveAlpha="true"
+                kernelMatrix="1 0 0 0 0 0 0 0 -1"
+                bias="0.5"
+            ></feConvolveMatrix>
+        </filter>
+
+        <g id="flower">
+            <image xlink:href="./flower.svg"></image>
+        </g>
+    </defs>
+
+    <use xlink:href="#flower" style="filter: url(#emboss)"></use>
+</svg>

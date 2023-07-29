@@ -1,0 +1,32 @@
+<!-- @format -->
+
+<svg>
+    <defs>
+        <filter id="sky-shadow" filterUnits="objectBoundingBox">
+            <feImage
+                xlink:href="./t.jpeg"
+                result="sky"
+                x="0"
+                y="0"
+                width="100%"
+                height="100%"
+                preserveAspectRatio="none"
+            ></feImage>
+            <feGaussianBlur
+                in="SourceAlpha"
+                stdDeviation="2"
+                result="blur"
+            ></feGaussianBlur>
+            <feOffset in="blur" dx="4" dy="4" result="offsetBlur"></feOffset>
+            <feMerge>
+                <feMergeNode in="sky"></feMergeNode>
+                <feMergeNode in="offsetBlur"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <g id="flower" style="filter: url(#sky-shadow)">
+        <image xlink:href="./flower.svg"></image>
+    </g>
+</svg>
